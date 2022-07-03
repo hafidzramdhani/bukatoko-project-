@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/nav_graph"
+   app:startDestination="@+id/nav_home">
+
+   <fragment
+       android:id="@+id/nav_home"
+       android:name="com.bukatoko.id.HomeFragment"
+       android:label="@string/app_name"
+       tools:layout="@layout/fragment_home"/>
+   
+   
+   <fragment
+       android:id="@+id/nav_katalog"
+       android:name=".KatalogFragment"
+       android:label="@string/katalog"
+       tools:layout="@layout/fragment_katalog" />
+
+   <fragment
+       android:id="@+id/nav_chat"
+       android:name="com.bukatoko.id.ChatFragment"
+       android:label="@string/chat"
+       tools:layout="@layout/fragment_chat" />
+
+   <fragment
+       android:id="@+id/nav_promosi"
+       android:name="com.bukatoko.id.PromosiFragment"
+       android:label="@string/promosi"
+       tools:layout="@layout/fragment_profile" />
+	   
+   <fragment
+       android:id="@+id/nav_aplikasi"
+       android:name="com.bukatoko.id.AplikasiFragment"
+       android:label="@string/aplikasi"
+       tools:layout="@layout/fragment_profile" />
+
+</navigation>

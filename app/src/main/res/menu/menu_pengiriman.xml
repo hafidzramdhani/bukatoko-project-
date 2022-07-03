@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home" android:icon="@drawable/ic_no_money" android:title="Belum Bayar"/>
+    <item android:id="@+id/nav_katalog" android:icon="@drawable/ic_katalog" android:title="Di Proses"/>
+    <item android:id="@+id/nav_chat" android:icon="@drawable/ic_car" android:title="Di Kirim"/>
+    <item android:id="@+id/nav_promosi" android:icon="@drawable/ic_rating" android:title="Ulasan"/>
+
+</menu>

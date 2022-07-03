@@ -1,0 +1,34 @@
+[
+  {
+    "artifactId": "material",
+    "excludes": [],
+    "groupId": "com.google.android.material",
+    "scope": "compile",
+    "versionName": "1.4.0"
+  },
+  {
+    "artifactId": "constraintlayout",
+    "excludes": [],
+    "groupId": "androidx.constraintlayout",
+    "scope": "compile",
+    "versionName": "2.1.0"
+  },
+  {
+    "artifactId": "navigation-fragment",
+    "excludes": [],
+    "groupId": "androidx.navigation",
+    "versionName": "2.4.2"
+  },
+  {
+    "artifactId": "navigation-ui",
+    "excludes": [],
+    "groupId": "androidx.navigation",
+    "versionName": "2.4.2"
+  },
+  {
+    "artifactId": "appcompat",
+    "excludes": [],
+    "groupId": "androidx.appcompat",
+    "versionName": "1.4.2"
+  }
+]

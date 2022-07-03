@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7f9fa"
+    tools:context=".MainActivity" >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:elevation="0dp" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:theme="@style/ToolbarTheme"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+            app:titleTextColor="@color/black"
+			app:titleTextAppearance="@style/ToolbarTheme" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.800000011920929dp"
+            android:layout_below="@+id/toolbar"
+            android:background="#E6E6EA" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <fragment
+        android:id="@+id/navHost"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_below="@id/appBar"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.800000011920929dp"
+        android:layout_above="@+id/bottom_nav"
+        android:background="#E6E6EA" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        app:elevation="0dp"
+        app:itemIconTint="@drawable/bottom_selector"
+        app:itemRippleColor="@color/colorControlHighlight"
+        app:itemTextColor="@drawable/bottom_selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_nav" />
+
+</RelativeLayout>
